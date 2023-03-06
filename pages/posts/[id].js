@@ -21,6 +21,22 @@ export async function getStaticPaths() {
   };
 }
 
+  // if getting paths from an API endpoint, this would be an example of the code you would write:
+
+//   export async function getAllPostIds() {
+//     // Instead of the file system,
+//     // fetch post data from an external API endpoint
+//     const res = await fetch('..');
+//     const posts = await res.json();
+//     return posts.map((post) => {
+//       return {
+//         params: {
+//           id: post.id,
+//         },
+//       };
+//     });
+//   }
+
 export default function Post({ postData }) {
     return (
       <Layout>
